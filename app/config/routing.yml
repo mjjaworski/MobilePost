@@ -1,4 +1,15 @@
 app:
+<<<<<<< HEAD
     resource: "@AppBundle/Resources/Config/routing.yml"
     type:     rest
     prefix: /api
+=======
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+app_parcelorder:
+    type: rest
+    prefix: /api
+    resource: "@AppBundle/Resources/config/routing.yml"
+
+>>>>>>> dd061454da3f5f5f45708fb881976aee63c4121c

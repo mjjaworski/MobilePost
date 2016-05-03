@@ -1,18 +1,12 @@
 <?php
-	namespace AppBundle\Controller;
-	use FOS\RestBundle\Controller\FOSRestController;
-	use Symfony\Component\HttpFoundation\Request;
-	use Symfony\Component\HttpFoundation\Response;
-	use Symfony\COmponent\HttpKernel\Exception\NotFoundHttpException;
-	
-	class ParcelOrderController extends FOSRestController
-	{
-		public function getParcelOrderAction($id)
-		{
-			
-		}
-	}
-	
+namespace AppBundle\Controller;
+use FOS\RestBundle\Controller\FOSRestController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\COmponent\HttpKernel\Exception\NotFoundHttpException;
+
+
+
 class ParcelOrderController extends FOSRestController 
 {
 	public function getParcelsOrderAction()
@@ -30,7 +24,7 @@ class ParcelOrderController extends FOSRestController
 		try 
 		{
 			$newParcelOrder = $this->container->get('pai_rest.parcelorder_form.handler')->post($request->request->all());
-			$routeOptions = array('id' => $newParcelOrder->getId(),'_format' => $request->get('_format'));
+			$routeOptions = array('id' => $newParcel->getId(),'_format' => $request->get('_format'));
 			return $this->routeRedirectView('api_1_get_parcelorder', $routeOptions,Response::HTTP_CREATED);
 		}	 
 		catch (InvalidFormException $exception) 
@@ -75,4 +69,7 @@ class ParcelOrderController extends FOSRestController
 			throw new NotFoundHttpException(sprintf('The resource \'%s\' was not found.', $id));
 		}
 	}
+
+
 }
+

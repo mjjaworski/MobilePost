@@ -8,35 +8,26 @@ use AppBundle\Model\ParcelOrderInterface;
 /**
  * ParcelOrder
  *
- * @ORM\Table(name="parcel_order")
+ * @ORM\Table(name="ParcelOrder")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ParcelOrderRepository")
  */
-class ParcelOrder
-{
-    /**
-    * @ORM\OneToOne(targetEntity="Parcel", inversedBy="parcelOrders")
-    * @ORM\JoinColumn(name="parcel_id", referencedColumnName="id")
-	* @ORM\Table(name="ParcelOrder")
-	* @ORM\Entity(repositoryClass="AppBundle\Repository\ParcelOrderRepository")
-	*/
 class ParcelOrder implements ParcelOrderInterface
 {
     /**
      * @ORM\Column(name="parcel_id", type="integer")
+     * @ORM\parcel_id
       */
     protected $parcel;
     
     /**
-      * @ORM\OneToOne(targetEntity="AddressData", inversedBy="parcelOrders")
-      * @ORM\JoinColumn(name="sender_id", referencedColumnName="id")
       * @ORM\Column(name="sender_id", type="integer")
+      * @ORM\sender_id
       */
     protected $sender;
     
     /**
-      * @ORM\OneToOne(targetEntity="AddressData", inversedBy="parcelOrders")
-      * @ORM\JoinColumn(name="receiver_id", referencedColumnName="id")
       * @ORM\Column(name="receiver_id", type="integer")
+      * @ORM\receiver_id
       */    
     protected $receiver;
 
