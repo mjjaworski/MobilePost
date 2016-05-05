@@ -11,7 +11,7 @@ class ReceiverController extends FOSRestController {
 	public function getReceiversAction()
 	{
 		$orders=$this->getDoctrine()->getRepository('AppBundle:ParcelOrder')->findAll();
-		foreach($orders in $order)
+		foreach($orders as $order)
 		{
 			$receivers[]=$this->getDoctrine()->getRepository('AppBundle:AddressData')->find($order->getReceiver()->getId());
 		}
