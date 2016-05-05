@@ -5,4 +5,4 @@ app:
 app_parcelorder:
     type: rest
     prefix: /api
-    resource: "@AppBundle/Resources/config/routing.yml"
+    resource: "@AppBundle/Resources/Config/routing.yml"
