@@ -68,9 +68,7 @@ swiftmailer:
     spool:     { type: memory }
 
 fos_rest:
-<<<<<<< HEAD
     param_fetcher_listener: force
-=======
     serializer:
         serialize_null: true
     view:
@@ -103,5 +101,3 @@ fos_rest:
         messages:
             'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
     disable_csrf_role: ROLE_API
-
->>>>>>> dd061454da3f5f5f45708fb881976aee63c4121c
