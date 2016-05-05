@@ -5,14 +5,6 @@
 	use Symfony\Component\HttpFoundation\Response;
 	use Symfony\COmponent\HttpKernel\Exception\NotFoundHttpException;
 	
-	class ParcelOrderController extends FOSRestController
-	{
-		public function getParcelOrderAction($id)
-		{
-			
-		}
-	}
-	
 class ParcelOrderController extends FOSRestController 
 {
 	public function getParcelsOrderAction()
