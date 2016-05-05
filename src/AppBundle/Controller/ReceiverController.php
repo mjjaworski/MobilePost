@@ -11,16 +11,16 @@ class ReceiverController extends FOSRestController {
 	public function getReceiversAction()
 	{
 		$orders=$this->getDoctrine()->getRepository('AppBundle:ParcelOrder')->findAll();
-		foreach($order in $orders)
+		foreach($orders in $order)
 		{
-			$receivers[]=$this->getDoctrine()->getRepository('AppBundle:AddressData')->find($order->getReceiver()->getId())
+			$receivers[]=$this->getDoctrine()->getRepository('AppBundle:AddressData')->find($order->getReceiver()->getId());
 		}
 		return $receivers;
 	}
 	
 	public function getReceiverAction($id)
 	{
-		$receiver=$this->getDoctrine()->getRepository('AppBundle:AddressData')->find($id)
+		$receiver=$this->getDoctrine()->getRepository('AppBundle:AddressData')->find($id);
 		return $receiver;
 	}
 }
