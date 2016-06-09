@@ -1,8 +1,5 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
-
-app_parcelorder:
+app_parcel_order:
     type: rest
-    prefix: /api
-    resource: "@AppBundle/Resources/Config/routing.yml"
+    prefix: /v1
+    resource: 'AppBundle\Controller\ParcelOrderController'
+    name_prefix: api_1_
