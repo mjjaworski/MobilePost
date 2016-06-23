@@ -2,3 +2,6 @@ app:
     resource: "@AppBundle/Resources/Config/routing.yml"
     type:     rest
     prefix: /api
+pai_parcelorder_angular:
+    resource: "@AppBundle/Controller"
+    type: annotation

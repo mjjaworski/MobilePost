@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/postmanmanager", name="pai_postman_manager")
+     * @Route("/parcelordermanager", name="pai_parcelOrder_manager")
      */
     public function indexAction()
     {

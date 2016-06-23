@@ -12,7 +12,7 @@ use FOS\UserBundle\Model\User as BaseUser;
  * @ORM\Table(name="postman")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\PostmanRepository")
  */
-class Postman extends BaseUser implements PostmanInterface
+class Postman implements PostmanInterface
 {
     /**
      * @var int
@@ -96,5 +96,18 @@ class Postman extends BaseUser implements PostmanInterface
     public function getCity()
     {
         return $this->city;
+    }
+
+    public function setEmail($email)
+    {
+        // TODO: Implement setEmail() method.
+        $this->email->$email;
+        return $this;
+    }
+
+    public function getEmail()
+    {
+        // TODO: Implement getEmail() method.
+        return $this->email;
     }
 }

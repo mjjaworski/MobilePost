@@ -1,7 +1,7 @@
 'use strict';
 /* Directives */
-var postmanDirectives = angular.module('postmanDirectives', []);
-postmanDirectives.directive('ngRedirectTo',['$window', function($window) {
+var parcelOrderDirectives = angular.module('parcelOrderDirectives', []);
+parcelOrderDirectives.directive('ngRedirectTo',['$window', function($window) {
     return {
         restrict: 'A',
         link: function(scope, element, attributes) {

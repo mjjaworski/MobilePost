@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d71c2a38965f27548575a066b9214007",
-    "content-hash": "7a0ed32b79ef68c5e85490ac23397c74",
+    "hash": "48d0cab3f29d6095bb7ec7ffd3fdc2a8",
+    "content-hash": "230be2d5b9a1b3347210627038f97496",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -783,7 +783,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/665986f912f832c6ab08521624baf7baf6657377",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/c1b87d933dfc9b59fc603f8e44f8064e4530a2b1",
                 "reference": "22e31b00233a459972a6b3e4df6f7a9535be8289",
                 "shasum": ""
             },
@@ -2607,7 +2607,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "friendsofsymfony/rest-bundle": 20
+        "friendsofsymfony/rest-bundle": 20,
+        "jms/serializer-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
